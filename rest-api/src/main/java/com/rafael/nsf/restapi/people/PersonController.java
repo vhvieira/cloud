@@ -23,7 +23,7 @@ public class PersonController {
     @GetMapping("/upload")
     public ResponseEntity<Person> upload() {
         try {
-            uploadService.sendSingleFile();
+            uploadService.sendSimpleFileToJira();
             return ResponseEntity.ok().build();
         } catch (Exception ex) {
             log.error("Exception", ex);
