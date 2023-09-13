@@ -1,0 +1,8 @@
+spring:
+  jpa:
+    hibernate:
+      ddl-auto: update
+
+application:
+  products:
+    url: https://product-service-wipro.cfapps.io
